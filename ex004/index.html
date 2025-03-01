@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo imagens</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Cor de fundo mais calma */
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .image-container img {
+            width: 30%;
+            max-width: none;
+            max-height: 200px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .full-width-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .form-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container form {
+            display: inline-block;
+            text-align: left;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-container input[type="submit"] {
+            display: block;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0e0e0;
+        }
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container img {
+                width: 80%;
+                margin-bottom: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .image-container img {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Motivos que nos fazem querer ativar o kit:</h1>
+    <hr>
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Instituto_Federal_de_Mato_Grosso_do_Sul_-_Marca_Vertical_2015.svg/300px-Instituto_Federal_de_Mato_Grosso_do_Sul_-_Marca_Vertical_2015.svg.png" alt="ifms">
+        <img src="https://s1.static.brasilescola.uol.com.br/be/vestibular/muitos-estudantes-nao-sabem-lidar-com-pressao-nos-estudos-para-vestibular-5abb91b7c6233.jpg" alt="Aluno exausto">
+        <img src="https://noticiasconcursos.com.br/wp-content/uploads/2022/01/noticiasconcursos.com.br-angustia-de-tirar-nota-baixa.jpg" alt="nota baixa">
+    </div>
+    <hr>
+    <h1>A cura para todos esses motivos:</h1>
+    <hr>
+    <img class="full-width-image" src="https://gastronomiacontemporanea.wordpress.com/wp-content/uploads/2011/03/img-vodka.jpg" alt="bebidas">
+
+    <h1>Bandoleiros</h1>
+    <div class="image-container">
+        <img src="Imagens/imag.jpeg" alt="Momento importante 1">
+        <img src="Imagens/image.jpeg" alt="Momento importante 2">
+        <img src="Imagens/imagen.jpeg" alt="Momento importante 3">
+    </div>
+
+    <div class="form-container">
+        <h2>Escolha sua bebida favorita:</h2>
+        <form>
+            <label>
+                <input type="radio" name="bebida" value="vodka"> Vodka
+            </label>
+            <label>
+                <input type="radio" name="bebida" value="whisky"> Whisky
+            </label>
+            <label>
+                <input type="radio" name="bebida" value="cerveja"> Cerveja
+            </label>
+            <label>
+                <input type="radio" name="bebida" value="vinho"> Vinho
+            </label>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Omar Ruiz || Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
